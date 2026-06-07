@@ -1,0 +1,31 @@
+# ══════════════════════════════════════════════════════════
+#  Financial AI Chatbot — requirements.txt
+#  100% Free Stack: LangChain + Ollama + Streamlit
+#  Install with: pip install -r requirements.txt
+# ══════════════════════════════════════════════════════════
+
+# ── LangChain Core (our AI framework) ──────────────────────
+# LangChain connects: data → retrieval → LLM → answer
+langchain==0.2.16
+langchain-community==0.2.16    # Ollama LLM + ChromaDB integrations
+langchain-core==0.2.38         # Base classes used by all LangChain packages
+
+# ── Local LLM via Ollama (free, runs on your Mac) ──────────
+ollama==0.3.3                  # Python client that talks to Ollama server
+
+# ── Vector Database for RAG ────────────────────────────────
+chromadb==0.5.5                # Stores text embeddings locally
+
+# ── SEC Data Fetching ──────────────────────────────────────
+requests==2.32.3               # HTTP calls to SEC EDGAR API
+pandas==2.2.2                  # Table/DataFrame manipulation
+numpy==1.26.4                  # Number crunching
+
+# ── Web UI ─────────────────────────────────────────────────
+streamlit==1.38.0              # Our chat interface
+plotly==5.23.0                 # Interactive charts in the dashboard
+
+# ── Utilities ──────────────────────────────────────────────
+python-dotenv==1.0.1           # Reads our .env config file
+rich==13.8.1                   # Pretty terminal output
+tqdm==4.66.5                   # Progress bars
